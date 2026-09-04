@@ -32,7 +32,7 @@ Refactors the project into modular, production-grade code:
 - **`Trainer` Automation:** Eliminates boilerplate training loops, handles hardware selection (`accelerator="auto"`), and automates metric tracking.
 - **Production Callbacks:** Uses `ModelCheckpoint` to save optimal weights based on `val_loss` and `EarlyStopping` to prevent overfitting.
 
-### 3. PyTorch Lightning CNN & Sequence Model (`Lab 2b`)
+### 3. PyTorch Lightning CNN & Sequence Model 
 Upgrades the network architecture to handle 2D spatial features and multi-character text lines:
 - **Spatial Feature Extraction:** Uses 2D Convolutional layers (`nn.Conv2d`), Batch Normalization (`nn.BatchNorm2d`), and Max Pooling (`nn.MaxPool2d`) to extract visual features like curves and edges.
 - **Synthetic Sequence Pipeline:** Extends single-digit data into multi-character sequence inputs using custom synthetic dataset generators (`MNISTLinesDataModule`).
